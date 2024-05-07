@@ -1,0 +1,44 @@
+@charset "utf-8";
+html{
+    font-size: 100%;
+}
+body{
+    font-family: 'Poppins', 'Noto Sans JP',  'Hiragino Kaku Gothic ProN、ヒラギノ角ゴ ProN、Hiragino Kaku Gothic Pro、ヒラギノ角ゴ Pro', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{max-width: 100%;}
+/* header */
+.header{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+   
+    padding: 15px;
+
+}
+.header img{
+    width: 120px;
+    height: auto;
+}
+.header-navlist{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-navitem {
+    display: block;
+    padding: 10px;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border-color .25s;
+    
+}
+.header-navitem > a{
+    color: #333;
+}
