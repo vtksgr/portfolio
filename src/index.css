@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --accent: #ff3b34;
+  --text: #222222;
+  --muted: #777777;
+  --left-bg: #ffffff;
+  --right-bg: #f1f1f1;
+  --card-bg: rgba(246, 246, 246, 0.93);
+  font-family: "Jost", ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  min-width: 320px;
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  background:#F8F8F8;
+}
+
+@media (pointer: fine) {
+  body,
+  a,
+  button,
+  [data-cursor-hover] {
+    cursor: none;
+  }
+}
+
+.custom-cursor,
+.custom-cursor-ring {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  border-radius: 9999px;
+  transform: translate(-50%, -50%);
+}
+
+.custom-cursor {
+  height: 10px;
+  width: 10px;
+  background: var(--accent);
+  transition: width 0.2s ease, height 0.2s ease;
+}
+
+.custom-cursor-ring {
+  height: 36px;
+  width: 36px;
+  border: 1px solid rgba(255, 59, 52, 0.55);
+  background: rgba(255, 59, 52, 0.08);
+  opacity: 0.5;
+  transition:
+    width 0.25s ease,
+    height 0.25s ease,
+    opacity 0.25s ease;
+}
+
+@media (pointer: coarse) {
+  .custom-cursor,
+  .custom-cursor-ring {
+    display: none;
+  }
+}
+
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+.hero-audience {
+  min-width: 12ch;
+  transition:
+    opacity 0.32s ease,
+    transform 0.32s ease,
+    filter 0.32s ease;
+}
+
+.hero-audience.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+.hero-audience.is-hidden {
+  opacity: 0;
+  transform: translateY(-10px);
+  filter: blur(2px);
+}
