@@ -20,7 +20,7 @@ export default function AboutSection() {
           </div>
         </div>
 
-        <div className="mt-14 grid gap-12 md:mt-20 md:grid-cols-[minmax(0,1.2fr)_minmax(320px,560px)] md:items-start md:gap-14">
+        <div className="mt-14 grid gap-12 md:mt-20 lg:grid-cols-[minmax(0,1.2fr)_minmax(320px,560px)] lg:items-start lg:gap-14">
           <div className="space-y-12 md:space-y-14">
             <p className="max-w-[820px] text-[1.2rem] leading-[1.75] text-[var(--text)] md:text-[1.5rem]">
               <span

@@ -46,7 +46,7 @@ export default function HeroSection() {
 
   return (
     <section id="top" className="relative min-h-screen w-full overflow-hidden">
-      <div className="absolute inset-0 hidden md:grid md:grid-cols-[43%_28%_29%]">
+      <div className="absolute inset-0 hidden lg:grid lg:grid-cols-[43%_28%_29%]">
         <div style={{ backgroundColor: 'var(--left-bg)' }} />
         <div style={{ backgroundColor: '#f8f8f8' }} />
         <div
@@ -57,14 +57,14 @@ export default function HeroSection() {
       </div>
 
       <div
-        className="absolute inset-0 md:hidden"
+        className="absolute inset-0 lg:hidden"
         style={{
           background:
             'linear-gradient(180deg, var(--left-bg) 0%, #f6f6f6 48%, #d2d2d2 100%)',
         }}
       />
 
-      <nav className="absolute inset-x-0 top-0 z-20 flex flex-col gap-6 px-5 py-6 sm:px-8 md:flex-row md:items-center md:justify-between md:px-[3.2rem] md:py-9">
+      <nav className="absolute inset-x-0 top-0 z-20 flex flex-col gap-5 px-5 py-6 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-[3.2rem] lg:py-9">
         <a
           href="#top"
           className="flex items-center gap-2 text-[clamp(1.35rem,4vw,2.1rem)] font-bold leading-none tracking-[0.03em]"
@@ -73,7 +73,7 @@ export default function HeroSection() {
           <span style={{ color: 'var(--accent)' }}>PARIYAR</span>
         </a>
 
-        <ul className="flex flex-wrap items-center gap-x-5 gap-y-2 text-[0.72rem] font-semibold tracking-[0.04em] md:gap-8 md:text-[0.92rem]">
+        <ul className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[0.7rem] font-semibold tracking-[0.04em] sm:gap-x-5 sm:text-[0.78rem] lg:gap-8 lg:text-[0.92rem]">
           {navItems.map((item) => (
             <li key={item.label}>
               <a
@@ -88,8 +88,8 @@ export default function HeroSection() {
         </ul>
       </nav>
 
-      <div className="relative z-10 grid min-h-screen grid-cols-1 px-5 pb-0 pt-32 sm:px-8 md:grid-cols-[43%_57%] md:px-0 md:pb-0 md:pt-[8.4rem]">
-        <div className="flex items-center md:px-[3.2rem] md:pr-[3.6rem]">
+      <div className="relative z-10 grid min-h-screen grid-cols-1 px-5 pb-0 pt-44 sm:px-8 sm:pt-40 lg:grid-cols-[43%_57%] lg:px-0 lg:pb-0 lg:pt-[8.4rem]">
+        <div className="flex items-center lg:px-[3.2rem] lg:pr-[3.6rem]">
           <div className="flex w-full flex-col justify-center">
             <p
               className="mb-4 text-[1rem] font-normal md:mb-5 md:text-[1.25rem]"
@@ -165,17 +165,17 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="relative mt-10 flex min-h-[34rem] items-end justify-center overflow-hidden md:mt-0 md:min-h-0">
-          <div className="absolute inset-x-0 bottom-[10] z-10 flex justify-center sm:bottom-[-2rem] md:bottom-[-6rem]">
+        <div className="relative mt-8 flex min-h-[36rem] items-end justify-center overflow-hidden sm:min-h-[42rem] lg:mt-0 lg:min-h-0">
+          <div className="absolute inset-x-0 bottom-[-1rem] z-10 flex justify-center sm:bottom-[-2rem] lg:bottom-[-6rem]">
             <img
               src={portrait2}
               alt="Sagar portrait"
-              className="block h-[38rem] w-auto object-contain grayscale sm:h-[45rem] md:h-[calc(100vh-1rem)] md:max-h-[980px] md:-translate-x-9"
+              className="block h-[38rem] max-w-full object-contain grayscale sm:h-[45rem] lg:h-[calc(100vh-1rem)] lg:max-h-[980px] lg:-translate-x-9"
             />
           </div>
 
           <article
-            className="absolute bottom-[32%] right-0 z-20 min-w-[15rem] px-4 py-3 md:min-w-[19rem] md:px-[1.15rem] md:py-[0.65rem]"
+            className="absolute bottom-[11.5rem] right-0 z-20 w-[min(19rem,92%)] px-4 py-3 lg:bottom-[32%] lg:px-[1.15rem] lg:py-[0.65rem]"
             style={{ backgroundColor: 'var(--card-bg)' }}
           >
             <p
@@ -193,7 +193,7 @@ export default function HeroSection() {
           </article>
 
           <article
-            className="absolute bottom-[16%] right-0 z-20 min-w-[15rem] px-4 py-3 md:min-w-[19rem] md:px-[1.15rem] md:py-[0.65rem]"
+            className="absolute bottom-[3rem] right-0 z-20 w-[min(19rem,92%)] px-4 py-3 lg:bottom-[16%] lg:px-[1.15rem] lg:py-[0.65rem]"
             style={{ backgroundColor: 'var(--card-bg)' }}
           >
             <p

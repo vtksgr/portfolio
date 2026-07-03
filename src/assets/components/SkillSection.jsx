@@ -89,7 +89,7 @@ export default function SkillSection() {
         </div>
 
         <div
-          className="mt-12 grid grid-cols-1 gap-px border md:mt-10 md:grid-cols-3"
+          className="mt-12 grid grid-cols-1 gap-px border sm:grid-cols-2 md:mt-10 lg:grid-cols-3"
           style={{
             borderColor: 'rgba(34, 34, 34, 0.25)',
             backgroundColor: 'rgba(34, 34, 34, 0.25)',

@@ -21,7 +21,7 @@ export default function ContactSection() {
       id="contact"
       className="border-t border-[rgba(255,59,52,0.45)] bg-[var(--right-bg)] px-5 py-16 sm:px-8 md:px-[4.2rem] md:py-20"
     >
-      <div className="mx-auto grid max-w-[1440px] items-center gap-14 md:grid-cols-2 md:gap-24">
+      <div className="mx-auto grid max-w-[1440px] items-center gap-14 lg:grid-cols-2 lg:gap-24">
         <div>
           <h2 className="text-[3.2rem] leading-[1.02] font-semibold text-[var(--text)] md:text-[clamp(3.4rem,5vw,5.25rem)]">
             Let&apos;s
@@ -64,7 +64,7 @@ export default function ContactSection() {
           </div>
         </div>
 
-        <div className="border border-[rgba(255,59,52,0.25)] bg-[rgba(255,255,255,0.55)] p-8 md:p-12">
+        <div className="border border-[rgba(255,59,52,0.25)] bg-[rgba(255,255,255,0.55)] p-6 sm:p-8 lg:p-12">
           <div className="flex flex-col gap-8">
             {contactInfo.map((item) => (
               <div key={item.label}>
