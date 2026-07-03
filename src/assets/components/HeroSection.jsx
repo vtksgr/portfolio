@@ -165,7 +165,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="relative mt-8 flex min-h-[36rem] items-end justify-center overflow-hidden sm:min-h-[42rem] lg:mt-0 lg:min-h-0">
+        <div className="relative mt-8 flex min-h-[32rem] items-end justify-center overflow-hidden sm:min-h-[42rem] lg:mt-0 lg:min-h-0">
           <div className="absolute inset-x-0 bottom-[-1rem] z-10 flex justify-center sm:bottom-[-2rem] lg:bottom-[-6rem]">
             <img
               src={portrait2}
@@ -175,7 +175,7 @@ export default function HeroSection() {
           </div>
 
           <article
-            className="absolute bottom-[11.5rem] right-0 z-20 w-[min(19rem,92%)] px-4 py-3 lg:bottom-[32%] lg:px-[1.15rem] lg:py-[0.65rem]"
+            className="absolute bottom-[8.5rem] right-0 z-20 w-[min(19rem,92%)] px-4 py-3 sm:bottom-[11.5rem] lg:bottom-[32%] lg:px-[1.15rem] lg:py-[0.65rem]"
             style={{ backgroundColor: 'var(--card-bg)' }}
           >
             <p
@@ -193,7 +193,7 @@ export default function HeroSection() {
           </article>
 
           <article
-            className="absolute bottom-[3rem] right-0 z-20 w-[min(19rem,92%)] px-4 py-3 lg:bottom-[16%] lg:px-[1.15rem] lg:py-[0.65rem]"
+            className="absolute bottom-0 right-0 z-20 w-[min(19rem,92%)] px-4 py-3 sm:bottom-[3rem] lg:bottom-[16%] lg:px-[1.15rem] lg:py-[0.65rem]"
             style={{ backgroundColor: 'var(--card-bg)' }}
           >
             <p
