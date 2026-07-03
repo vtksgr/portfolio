@@ -13,21 +13,11 @@ function App() {
     <>
       <CustomCursor />
       <HeroSection />
-      <div className="">
-        <AboutSection />
-      </div>
-      <div className="">
-        <SkillSection />
-      </div>
-      <div className="">
-        <Experience />
-      </div>
-      <div className="">
-        <ProjectSection />
-      </div>
-      <div className="">
-        <ContactSection />
-      </div>
+      <AboutSection />
+      <SkillSection />
+      <Experience />
+      <ProjectSection />
+      <ContactSection />
       <Footer />
       <ScrollToTopButton />
     </>

@@ -19,6 +19,12 @@ export default function HeroSection() {
   const [isAudienceVisible, setIsAudienceVisible] = useState(true)
 
   useEffect(() => {
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
+
+    if (reducedMotion.matches) {
+      return undefined
+    }
+
     let timeoutId
 
     const intervalId = window.setInterval(() => {
@@ -39,7 +45,7 @@ export default function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen w-full overflow-hidden">
+    <section id="top" className="relative min-h-screen w-full overflow-hidden">
       <div className="absolute inset-0 hidden md:grid md:grid-cols-[43%_28%_29%]">
         <div style={{ backgroundColor: 'var(--left-bg)' }} />
         <div style={{ backgroundColor: '#f8f8f8' }} />
@@ -141,6 +147,8 @@ export default function HeroSection() {
                 <a
                   href="https://github.com/vtksgr"
                   aria-label="GitHub"
+                  target="_blank"
+                  rel="noreferrer"
                   className="transition-opacity hover:opacity-65"
                 >
                   <FaGithub className="h-5 w-5" />
@@ -177,7 +185,7 @@ export default function HeroSection() {
               EXPERIENCE
             </p>
             <h3 className="mb-1 text-[2.35rem] leading-none font-bold text-black md:text-[2.65rem]">
-              4+
+              5+
             </h3>
             <p className="text-[0.95rem] leading-[1.2] text-black">
               Years professional work
@@ -198,7 +206,7 @@ export default function HeroSection() {
               Web &amp; E-com
             </h3>
             <p className="text-[0.95rem] leading-[1.2] text-black">
-              WordPress &nbsp;&bull;&nbsp; Shopify &nbsp;&bull;&nbsp; React &nbsp;&bull;&nbsp; Nodejs
+              WordPress &nbsp;&bull;&nbsp; Shopify &nbsp;&bull;&nbsp; React &nbsp;&bull;&nbsp; Node.js
             </p>
           </article>
         </div>

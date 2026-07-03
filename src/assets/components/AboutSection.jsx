@@ -54,13 +54,13 @@ export default function AboutSection() {
               style={{ borderColor: 'var(--accent)' }}
             >
               <h3 className="text-[2.4rem] leading-none font-semibold text-[var(--text)] md:text-[3rem]">
-                4+
+                5+
               </h3>
               <p
                 className="mt-5 text-[1rem] leading-[1.2] font-medium tracking-[0.01em] md:text-[1.05rem]"
                 style={{ color: 'var(--accent)' }}
               >
-                YEARS OF EXPEIENCE
+                YEARS OF EXPERIENCE
               </p>
             </article>
 
@@ -76,7 +76,7 @@ export default function AboutSection() {
                 className="mt-5 text-[1rem] leading-[1.2] font-medium tracking-[0.01em] md:text-[1.05rem]"
                 style={{ color: 'var(--accent)' }}
               >
-                LANGUAGE SPOKEN
+                LANGUAGES SPOKEN
               </p>
             </article>
 

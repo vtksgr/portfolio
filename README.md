@@ -75,6 +75,7 @@ npm run preview
 
 - `npm run dev` starts the local development server
 - `npm run build` creates the production build
+- `npm test` builds the site and runs production smoke tests
 - `npm run preview` previews the built app locally
 - `npm run lint` runs ESLint checks
 

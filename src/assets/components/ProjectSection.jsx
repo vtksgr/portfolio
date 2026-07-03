@@ -1,5 +1,3 @@
-import React from "react";
-
 const projects = [
   {
     id: 1,
@@ -107,7 +105,16 @@ export default function ProjectSection() {
             {project.links.length > 0 && (
               <div className="text-xs text-gray-500 flex flex-wrap gap-3">
                 {project.links.map((link, index) => (
-                  <span key={index}>{link}</span>
+                  <a
+                    key={index}
+                    href={`https://${link}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`Visit ${link}`}
+                    className="underline decoration-gray-300 underline-offset-4 transition-colors hover:text-red-600"
+                  >
+                    {link}
+                  </a>
                 ))}
               </div>
             )}
