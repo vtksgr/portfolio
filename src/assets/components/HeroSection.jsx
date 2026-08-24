@@ -3,20 +3,23 @@ import { FaGithub } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 // import portrait from '../images/sgr-portfolio.png'
 import portrait2 from '../images/sgr-portfolio.png'
+import { translations } from '../../data/translations.js'
 
-const navItems = [
-  { label: 'ABOUT ME', href: '#about-me' },
-  { label: 'SKILLS', href: '#skills' },
-  { label: 'EXPERIENCE', href: '#experience' },
-  { label: 'PROJECTS', href: '#projects' },
-  { label: 'CONTACT', href: '#contact' },
-]
-
-const rotatingAudience = ['FOR STARTUPS', 'FOR BUSINESSES', 'FOR BRANDS']
-
-export default function HeroSection() {
+export default function HeroSection({ language = 'en', setLanguage }) {
   const [audienceIndex, setAudienceIndex] = useState(0)
   const [isAudienceVisible, setIsAudienceVisible] = useState(true)
+  
+  const t = translations[language]
+  
+  const navItems = [
+    { label: t.nav.aboutMe, href: '#about-me' },
+    { label: t.nav.skills, href: '#skills' },
+    { label: t.nav.experience, href: '#experience' },
+    { label: t.nav.projects, href: '#projects' },
+    { label: t.nav.contact, href: '#contact' },
+  ]
+
+  const rotatingAudience = t.hero.audiences
 
   useEffect(() => {
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
@@ -42,7 +45,7 @@ export default function HeroSection() {
       window.clearInterval(intervalId)
       window.clearTimeout(timeoutId)
     }
-  }, [])
+  }, [rotatingAudience.length])
 
   return (
     <section id="top" className="relative min-h-screen w-full overflow-hidden">
@@ -73,19 +76,47 @@ export default function HeroSection() {
           <span style={{ color: 'var(--accent)' }}>PARIYAR</span>
         </a>
 
-        <ul className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[0.7rem] font-semibold tracking-[0.04em] sm:gap-x-5 sm:text-[0.78rem] lg:gap-8 lg:text-[0.92rem]">
-          {navItems.map((item) => (
-            <li key={item.label}>
-              <a
-                href={item.href}
-                className="transition-opacity hover:opacity-65"
-                style={{ color: 'var(--text)' }}
-              >
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[0.7rem] font-semibold tracking-[0.04em] sm:gap-x-5 sm:text-[0.78rem] lg:gap-8 lg:text-[0.92rem] justify-between lg:justify-start">
+          <ul className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[0.7rem] font-semibold tracking-[0.04em] sm:gap-x-5 sm:text-[0.78rem] lg:gap-8 lg:text-[0.92rem]">
+            {navItems.map((item) => (
+              <li key={item.href}>
+                <a
+                  href={item.href}
+                  className="transition-opacity hover:opacity-65"
+                  style={{ color: 'var(--text)' }}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+
+          <div className="ml-auto lg:ml-6 flex items-center gap-2 lg:gap-3 text-[0.7rem] font-semibold tracking-[0.04em] sm:text-[0.78rem] lg:text-[0.92rem]">
+            <button
+              onClick={() => setLanguage('en')}
+              aria-label="Switch to English"
+              className="px-2 py-1 transition-opacity hover:opacity-65"
+              style={{
+                color: language === 'en' ? 'var(--accent)' : 'var(--text)',
+                textDecoration: language === 'en' ? 'underline' : 'none',
+              }}
+            >
+              EN
+            </button>
+            <span style={{ color: 'var(--text)' }}>/</span>
+            <button
+              onClick={() => setLanguage('ja')}
+              aria-label="Switch to Japanese"
+              className="px-2 py-1 transition-opacity hover:opacity-65"
+              style={{
+                color: language === 'ja' ? 'var(--accent)' : 'var(--text)',
+                textDecoration: language === 'ja' ? 'underline' : 'none',
+              }}
+            >
+              日本語
+            </button>
+          </div>
+        </div>
       </nav>
 
       <div className="relative z-10 grid min-h-screen grid-cols-1 px-5 pb-0 pt-44 sm:px-8 sm:pt-40 lg:grid-cols-[43%_57%] lg:px-0 lg:pb-0 lg:pt-[8.4rem]">
@@ -95,15 +126,28 @@ export default function HeroSection() {
               className="mb-4 text-[1rem] font-normal md:mb-5 md:text-[1.25rem]"
               style={{ color: 'var(--accent)' }}
             >
-              Full-Stack Web Developer and Designer based in Japan.
+              {t.hero.intro}
             </p>
 
             <h1 className="mb-4 text-[clamp(3rem,8vw,7rem)] leading-[0.95] font-bold xl:text-[clamp(5.5rem,7vw,8.5rem)]">
-              Craft<span style={{ color: 'var(--accent)' }}>ing</span>
-              <br />
-              Digital
-              <br />
-              Experiences
+              {language === 'ja' ? (
+                <>
+                  {t.hero.heading.split('\n').map((line, i) => (
+                    <span key={i}>
+                      {line}
+                      <br />
+                    </span>
+                  ))}
+                </>
+              ) : (
+                <>
+                  Craft<span style={{ color: 'var(--accent)' }}>ing</span>
+                  <br />
+                  Digital
+                  <br />
+                  Experiences
+                </>
+              )}
             </h1>
 
             <p
@@ -123,7 +167,7 @@ export default function HeroSection() {
               className="mb-7 max-w-[36rem] text-[1rem] leading-[1.45] md:mb-8 md:text-[1.15rem]"
               style={{ color: 'var(--muted)' }}
             >
-              I design and develop modern websites, scalable web applications, and high-performing e-commerce platforms.
+              {t.hero.description}
             </p>
 
             <div className="mb-6 flex flex-wrap items-center justify-between gap-x-6 gap-y-4 md:mb-6 md:max-w-[32rem]">
@@ -133,13 +177,13 @@ export default function HeroSection() {
                   className="inline-flex items-center px-5 py-3 text-[0.82rem] font-medium tracking-[0.03em] text-white transition-opacity hover:opacity-90"
                   style={{ backgroundColor: 'var(--accent)' }}
                 >
-                  VIEW PROJECTS
+                  {t.hero.ctaProjects}
                 </a>
                 <a
                   href="#contact"
                   className="inline-flex items-center border-b border-[#bdbdbd] pb-1 text-[0.82rem] font-medium text-[#767676] transition-colors hover:text-[var(--text)]"
                 >
-                  HIRE ME
+                  {t.hero.ctaHire}
                 </a>
               </div>
 

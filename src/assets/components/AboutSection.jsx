@@ -1,4 +1,8 @@
-export default function AboutSection() {
+import { translations } from '../../data/translations.js'
+
+export default function AboutSection({ language = 'en' }) {
+  const t = translations[language]
+
   return (
     <section id="about-me" className="px-5 sm:px-8 md:px-[4.2rem] my-32">
       <div className="mx-auto max-w-[1440px]">
@@ -10,7 +14,7 @@ export default function AboutSection() {
             01
           </span>
           <h2 className="text-[3rem] leading-none font-semibold text-[var(--text)] md:text-[5rem]">
-            About
+            {t.about.title}
           </h2>
           <div className="mb-3 hidden h-px flex-1 md:block">
             <div
@@ -27,23 +31,15 @@ export default function AboutSection() {
                 className="mr-2 inline-block h-[1.5rem] w-[0.28rem] align-middle md:h-[1.4rem]"
                 style={{ backgroundColor: 'var(--accent)' }}
               />
-              am a web developer and UI designer based in Saitama, Japan, with
-              hands-on experience building everything from corporate websites to
-              Shopify e-commerce stores of clean design and practical
-              engineering.
+              {t.about.bio1}
             </p>
 
             <p className="max-w-[780px] text-[1rem] leading-[1.85] text-[var(--text)] md:text-[1.15rem]">
-              At Comworks Co., Ltd., I develop and maintain WordPress websites,
-              build out Shopify stores, design responsive UI layouts, and create
-              marketing graphics. Outside of work, I continuously push my
-              skills forward by building with React, Vue, and Node.js.
+              {t.about.bio2}
             </p>
 
             <p className="max-w-[760px] text-[1rem] leading-[1.85] text-[var(--text)] md:text-[1.15rem]">
-              I care deeply about details, spacing, typography, and interaction,
-              because great design should feel intuitive before it is even
-              noticed.
+              {t.about.bio3}
             </p>
           </div>
 
@@ -60,7 +56,7 @@ export default function AboutSection() {
                 className="mt-5 text-[1rem] leading-[1.2] font-medium tracking-[0.01em] md:text-[1.05rem]"
                 style={{ color: 'var(--accent)' }}
               >
-                YEARS OF EXPERIENCE
+                {t.about.stats.experience}
               </p>
             </article>
 
@@ -76,7 +72,7 @@ export default function AboutSection() {
                 className="mt-5 text-[1rem] leading-[1.2] font-medium tracking-[0.01em] md:text-[1.05rem]"
                 style={{ color: 'var(--accent)' }}
               >
-                LANGUAGES SPOKEN
+                {t.about.stats.languages}
               </p>
             </article>
 
@@ -92,7 +88,7 @@ export default function AboutSection() {
                 className="mt-5 text-[1rem] leading-[1.2] font-medium tracking-[0.01em] md:text-[1.05rem]"
                 style={{ color: 'var(--accent)' }}
               >
-                CMS PLATFORMS
+                {t.about.stats.platforms}
               </p>
             </article>
 
@@ -108,7 +104,7 @@ export default function AboutSection() {
                 className="mt-5 text-[1rem] leading-[1.2] font-medium tracking-[0.01em] md:text-[1.05rem]"
                 style={{ color: 'var(--accent)' }}
               >
-                PIXELS PUSHED
+                {t.about.stats.pixels}
               </p>
             </article>
           </div>
