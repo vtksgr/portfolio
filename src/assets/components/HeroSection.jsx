@@ -95,7 +95,7 @@ export default function HeroSection({ language = 'en', setLanguage }) {
             <button
               onClick={() => setLanguage('en')}
               aria-label="Switch to English"
-              className="px-2 py-1 transition-opacity hover:opacity-65"
+              className="px-2 py-1 transition-opacity hover:opacity-65 bg-transparent border-none cursor-pointer font-semibold"
               style={{
                 color: language === 'en' ? 'var(--accent)' : 'var(--text)',
                 textDecoration: language === 'en' ? 'underline' : 'none',
@@ -107,7 +107,7 @@ export default function HeroSection({ language = 'en', setLanguage }) {
             <button
               onClick={() => setLanguage('ja')}
               aria-label="Switch to Japanese"
-              className="px-2 py-1 transition-opacity hover:opacity-65"
+              className="px-2 py-1 transition-opacity hover:opacity-65 bg-transparent border-none cursor-pointer font-semibold"
               style={{
                 color: language === 'ja' ? 'var(--accent)' : 'var(--text)',
                 textDecoration: language === 'ja' ? 'underline' : 'none',
