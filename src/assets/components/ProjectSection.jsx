@@ -1,75 +1,19 @@
-const projects = [
-  {
-    id: 1,
-    title: "WordPress Corporate Sites",
-    subtitle: "Comworks Corporate Websites",
-    type: "Employed",
-    description:
-      "Responsible for maintaining and improving four corporate websites at Comworks. Involved in planning, UI design, and front-end development while ensuring responsive performance.",
-    tech: ["WordPress", "HTML", "CSS", "Figma", "Photoshop"],
-    links: [
-      "comworks.co.jp",
-      "sharako.com",
-      "cloudstudio.jp",
-      "comstation.jp",
-    ],
-  },
-  {
-    id: 2,
-    title: "Shopify E-commerce Store",
-    subtitle: "Comworks Online Store",
-    type: "Employed",
-    description:
-      "Developed and customized a full Shopify store including product pages, inventory management, UI improvements, and web design. Built as part of a 4-member development team.",
-    tech: ["Shopify", "Photoshop", "Illustrator"],
-    links: ["comworks.jp"],
-  },
-  {
-    id: 3,
-    title: "Fullstack Web Application",
-    subtitle: "Network Camera Photo Capture System",
-    type: "Employed",
-    description:
-      "Worked on UI/UX design and responsive front-end development for a web application used to capture and manage images from network cameras.",
-    tech: ["React", "Tailwind CSS", "Figma"],
-    links: [],
-  },
-  {
-    id: 4,
-    title: "Shopify E-commerce Store",
-    subtitle: "Pokhara Trading Online Store",
-    type: "Freelance",
-    description:
-      "Designed and developed a complete Shopify store including product management, UI improvements, responsive design, and promotional banner graphics.",
-    tech: ["Shopify", "Photoshop", "Illustrator"],
-    links: ["pokharatrading.jp"],
-  },
-  {
-    id: 5,
-    title: "Shopify E-commerce Store",
-    subtitle: "Talbarahi Online Store",
-    type: "Freelance",
-    description:
-      "Built a fully customized Shopify store including UI design improvements, product management, and marketing graphics.",
-    tech: ["Shopify", "Photoshop", "Illustrator"],
-    links: ["talbarahi.com"],
-  },
-  {
-    id: 6,
-    title: "Horizon Group Website",
-    subtitle: "Corporate Website + Basic CMS",
-    type: "Freelance",
-    description:
-      "Planned and developed a corporate website including UI/UX design, responsive front-end development, and backend implementation.",
-    tech: ["React", "Tailwind CSS", "Figma", "Node.js"],
-    links: ["horizongroup.co.jp"],
-  },
-];
+import { projects } from "../data/projects.js";
 
 export default function ProjectSection() {
   return (
     <section id="projects" className="max-w-7xl mx-auto px-6 py-20">
-      <h2 className="text-3xl font-semibold mb-12">Projects</h2>
+      <div className="mb-12 flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between">
+        <h2 className="text-3xl font-semibold">Projects</h2>
+
+        <a
+          href={`${import.meta.env.BASE_URL}work-history/`}
+          className="inline-flex items-center gap-2 border border-[var(--text)] px-4 py-2.5 text-[0.78rem] font-medium uppercase tracking-[0.08em] text-[var(--text)] transition-colors hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--accent)] sm:text-[0.82rem]"
+        >
+          Work History &amp; Project Details
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project) => (

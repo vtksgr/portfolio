@@ -170,7 +170,7 @@ export default function HeroSection() {
             <img
               src={portrait2}
               alt="Sagar portrait"
-              className="block h-[38rem] max-w-full object-contain grayscale sm:h-[45rem] lg:h-[calc(100vh-1rem)] lg:max-h-[980px] lg:-translate-x-9"
+              className="block h-[34rem] max-w-full object-contain grayscale sm:h-[40rem] lg:h-[calc(88vh-1rem)] lg:max-h-[860px] lg:-translate-x-9"
             />
           </div>
 
