@@ -1,29 +1,4 @@
-const skillGroups = [
-  {
-    title: 'Web Development',
-    items: ['HTML', 'CSS', 'JavaScript', 'Responsive Design'],
-  },
-  {
-    title: 'Frameworks & UI',
-    items: ['React', 'Vue.js', 'Tailwind CSS', 'Bootstrap', 'Node.js'],
-  },
-  {
-    title: 'CMS & E-commerce',
-    items: ['WordPress', 'Shopify'],
-  },
-  {
-    title: 'Design Tools',
-    items: ['Figma', 'Adobe Illustrator', 'Adobe Photoshop'],
-  },
-  {
-    title: 'Infrastructure',
-    items: ['AWS EC2', 'GitHub'],
-  },
-  {
-    title: 'Other',
-    items: ['UI/UX Design', 'Graphic Design', 'Web Marketing', 'Page Planning'],
-  },
-]
+import { translations } from '../../data/translations.js'
 
 function SkillCard({ title, items }) {
   return (
@@ -63,7 +38,36 @@ function SkillCard({ title, items }) {
   )
 }
 
-export default function SkillSection() {
+export default function SkillSection({ language = 'en' }) {
+  const t = translations[language]
+  
+  const skillGroups = [
+    {
+      title: t.skills.categories.webDevelopment,
+      items: t.skills.items.webDevelopment,
+    },
+    {
+      title: t.skills.categories.frameworks,
+      items: t.skills.items.frameworks,
+    },
+    {
+      title: t.skills.categories.cms,
+      items: t.skills.items.cms,
+    },
+    {
+      title: t.skills.categories.design,
+      items: t.skills.items.design,
+    },
+    {
+      title: t.skills.categories.infrastructure,
+      items: t.skills.items.infrastructure,
+    },
+    {
+      title: t.skills.categories.other,
+      items: t.skills.items.other,
+    },
+  ]
+
   return (
     <section
       id="skills"
@@ -78,7 +82,7 @@ export default function SkillSection() {
             02
           </span>
           <h2 className="text-[3rem] leading-none font-semibold tracking-[0.01em] text-[var(--text)] md:text-[4.35rem]">
-            Skills
+            {t.skills.title}
           </h2>
           <div className="mb-3 hidden h-px flex-1 md:block">
             <div

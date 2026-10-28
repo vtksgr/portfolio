@@ -20,7 +20,10 @@ const textLink = `underline decoration-[rgba(34,34,34,0.3)] underline-offset-4 t
 const timelineColumns = 'md:grid-cols-[12rem_minmax(0,1fr)] lg:grid-cols-[15rem_minmax(0,1fr)]'
 
 function getInitialLanguage() {
-  const lang = new URLSearchParams(window.location.search).get('lang')
+  // ?lang=ja wins; otherwise fall back to the language chosen on the homepage.
+  const lang =
+    new URLSearchParams(window.location.search).get('lang') ??
+    localStorage.getItem('portfolio-language')
   return lang === 'ja' ? 'ja' : 'en'
 }
 
@@ -166,6 +169,7 @@ export default function WorkHistoryPage() {
   useEffect(() => {
     document.documentElement.lang = lang
     document.title = labels.pageTitle
+    localStorage.setItem('portfolio-language', lang)
 
     const url = new URL(window.location.href)
     if (lang === 'ja') {

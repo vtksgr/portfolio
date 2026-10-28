@@ -1,21 +1,23 @@
-const contactInfo = [
-  {
-    label: 'Current Role',
-    value: 'Web Developer at Comworks Co., Ltd.',
-  },
-  {
-    label: 'Available For',
-    value: 'Freelance · Collaboration · Full-time',
-  },
-  {
-    label: 'Education',
-    value: 'Diploma in IT, Nippon International IT College',
-  },
-]
+import { translations } from '../../data/translations.js'
 
-const languages = ['English', '日本語', 'नेपाली']
+export default function ContactSection({ language = 'en' }) {
+  const t = translations[language]
+  
+  const contactInfo = [
+    {
+      label: t.contact.currentRole,
+      value: t.contact.currentRoleValue,
+    },
+    {
+      label: t.contact.availableFor,
+      value: t.contact.availableForValue,
+    },
+    {
+      label: t.contact.education,
+      value: t.contact.educationValue,
+    },
+  ]
 
-export default function ContactSection() {
   return (
     <section
       id="contact"
@@ -24,18 +26,17 @@ export default function ContactSection() {
       <div className="mx-auto grid max-w-[1440px] items-center gap-14 lg:grid-cols-2 lg:gap-24">
         <div>
           <h2 className="text-[3.2rem] leading-[1.02] font-semibold text-[var(--text)] md:text-[clamp(3.4rem,5vw,5.25rem)]">
-            Let&apos;s
+            {t.contact.title}
             <br />
             <span style={{ color: 'var(--accent)', fontStyle: 'italic' }}>
-              Work
+              {t.contact.titleEmphasis}
             </span>
             <br />
-            Together
+            {t.contact.titleEnd}
           </h2>
 
           <p className="mt-6 max-w-[34rem] text-[0.98rem] leading-[1.85] text-[var(--muted)] md:text-[1.02rem]">
-            Open to freelance projects, collaborations, and new opportunities.
-            Let&apos;s build something great.
+            {t.contact.description}
           </p>
 
           <div className="mt-10 flex flex-col gap-4">
@@ -47,7 +48,7 @@ export default function ContactSection() {
                 className="w-[72px] font-mono text-[0.68rem] uppercase tracking-[0.12em]"
                 style={{ color: 'var(--accent)' }}
               >
-                Email
+                {t.contact.emailLabel}
               </span>
               <span>vtksgr@gmail.com</span>
             </a>
@@ -57,9 +58,9 @@ export default function ContactSection() {
                 className="w-[72px] font-mono text-[0.68rem] uppercase tracking-[0.12em]"
                 style={{ color: 'var(--accent)' }}
               >
-                Location
+                {t.contact.locationLabel}
               </span>
-              <span>Saitama, Japan</span>
+              <span>{t.contact.locationValue}</span>
             </div>
           </div>
         </div>
@@ -79,12 +80,12 @@ export default function ContactSection() {
 
             <div>
               <p className="font-mono text-[0.64rem] uppercase tracking-[0.18em] text-[var(--muted)]">
-                Languages
+                {t.contact.languages}
               </p>
               <div className="mt-3 flex flex-wrap gap-2.5">
-                {languages.map((language) => (
+                {t.contact.languagesList.map((lang) => (
                   <span
-                    key={language}
+                    key={lang}
                     className="border px-3 py-1.5 text-[0.82rem]"
                     style={{
                       color: 'var(--text)',
@@ -92,7 +93,7 @@ export default function ContactSection() {
                       backgroundColor: 'rgba(255,255,255,0.45)',
                     }}
                   >
-                    {language}
+                    {lang}
                   </span>
                 ))}
               </div>

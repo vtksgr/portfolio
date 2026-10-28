@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import HeroSection from './assets/components/HeroSection.jsx'
 import AboutSection from './assets/components/AboutSection.jsx'
 import SkillSection from './assets/components/SkillSection.jsx'
@@ -9,16 +10,29 @@ import CustomCursor from './assets/components/CustomCursor.jsx'
 import ScrollToTopButton from './assets/components/ScrollToTopButton.jsx'
 
 function App() {
+  const [language, setLanguage] = useState(() => {
+    // Retrieve from localStorage, default to 'en'
+    const saved = localStorage.getItem('portfolio-language')
+    return saved === 'ja' ? 'ja' : 'en'
+  })
+
+  useEffect(() => {
+    // Update localStorage when language changes
+    localStorage.setItem('portfolio-language', language)
+    // Update document language
+    document.documentElement.lang = language === 'ja' ? 'ja' : 'en'
+  }, [language])
+
   return (
     <>
       <CustomCursor />
-      <HeroSection />
-      <AboutSection />
-      <SkillSection />
-      <Experience />
-      <ProjectSection />
-      <ContactSection />
-      <Footer />
+      <HeroSection language={language} setLanguage={setLanguage} />
+      <AboutSection language={language} />
+      <SkillSection language={language} />
+      <Experience language={language} />
+      <ProjectSection language={language} />
+      <ContactSection language={language} />
+      <Footer language={language} />
       <ScrollToTopButton />
     </>
   )
