@@ -57,7 +57,7 @@ export default function ProjectSection({ language = 'en' }) {
               </div>
 
               {links.length > 0 && (
-                <div className="text-xs text-gray-500 flex flex-wrap gap-3">
+                <div className="text-sm flex flex-wrap gap-3">
                   {links.map((link) => (
                     <a
                       key={link}
@@ -65,7 +65,7 @@ export default function ProjectSection({ language = 'en' }) {
                       target="_blank"
                       rel="noreferrer"
                       aria-label={`Visit ${link}`}
-                      className="underline decoration-gray-300 underline-offset-4 transition-colors hover:text-red-600"
+                      className="text-[#2563EB] underline decoration-[#2563EB]/30 underline-offset-4 transition-colors hover:text-[#1d4ed8] hover:decoration-[#1d4ed8]"
                     >
                       {link}
                     </a>

@@ -1,3 +1,4 @@
+import { FaArrowRight } from 'react-icons/fa'
 import { translations } from '../../data/translations.js'
 
 const aboutUrl = `${import.meta.env.BASE_URL}about/`
@@ -47,10 +48,10 @@ export default function AboutSection({ language = 'en' }) {
 
             <a
               href={aboutHref}
-              className="inline-flex items-center gap-2 border-b border-[#bdbdbd] pb-1 text-[0.95rem] font-medium text-[var(--muted)] transition-colors hover:text-[var(--accent)] hover:border-[var(--accent)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--accent)]"
+              className="inline-flex items-center gap-2 border-b border-[#2563EB]/30 pb-1 text-[0.95rem] font-medium text-[#2563EB] transition-colors hover:text-[#1d4ed8] hover:border-[#1d4ed8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#2563EB]"
             >
               {t.about.readMore}
-              <span aria-hidden="true">→</span>
+              <FaArrowRight aria-hidden="true" className="h-3 w-3" />
             </a>
           </div>
 

@@ -15,7 +15,7 @@ const languages = [
 const focusRing =
   'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--accent)]'
 
-const textLink = `underline decoration-[rgba(34,34,34,0.3)] underline-offset-4 transition-colors hover:text-[var(--accent)] hover:decoration-[var(--accent)] ${focusRing}`
+const textLink = `text-[#2563EB] underline decoration-[#2563EB]/30 underline-offset-4 transition-colors hover:text-[#1d4ed8] hover:decoration-[#1d4ed8] ${focusRing}`
 
 const timelineColumns = 'md:grid-cols-[12rem_minmax(0,1fr)] lg:grid-cols-[15rem_minmax(0,1fr)]'
 
