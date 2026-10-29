@@ -1,7 +1,10 @@
 import { translations } from '../../data/translations.js'
 
+const aboutUrl = `${import.meta.env.BASE_URL}about/`
+
 export default function AboutSection({ language = 'en' }) {
   const t = translations[language]
+  const aboutHref = language === 'ja' ? `${aboutUrl}?lang=ja` : aboutUrl
 
   return (
     <section id="about-me" className="px-5 sm:px-8 md:px-[4.2rem] my-32">
@@ -41,6 +44,14 @@ export default function AboutSection({ language = 'en' }) {
             <p className="max-w-[760px] text-[1rem] leading-[1.85] text-[var(--text)] md:text-[1.15rem]">
               {t.about.bio3}
             </p>
+
+            <a
+              href={aboutHref}
+              className="inline-flex items-center gap-2 border-b border-[#bdbdbd] pb-1 text-[0.95rem] font-medium text-[var(--muted)] transition-colors hover:text-[var(--accent)] hover:border-[var(--accent)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--accent)]"
+            >
+              {t.about.readMore}
+              <span aria-hidden="true">→</span>
+            </a>
           </div>
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5">

@@ -36,3 +36,10 @@ test('work history page is built under the base path', async () => {
   assert.match(html, /<title>Work History &amp; Professional Experience \| Sagar Pariyar<\/title>/)
   assert.match(html, /(?:src|href)="\/portfolio\//)
 })
+
+test('about page is built under the base path', async () => {
+  const html = await readFile(path.join(distDirectory, 'about', 'index.html'), 'utf8')
+
+  assert.match(html, /<title>About Me \| Sagar Pariyar<\/title>/)
+  assert.match(html, /(?:src|href)="\/portfolio\//)
+})

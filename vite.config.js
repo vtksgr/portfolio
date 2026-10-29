@@ -12,6 +12,7 @@ export default defineConfig({
       input: {
         main: resolve(import.meta.dirname, 'index.html'),
         workHistory: resolve(import.meta.dirname, 'work-history/index.html'),
+        about: resolve(import.meta.dirname, 'about/index.html'),
       },
     },
   },

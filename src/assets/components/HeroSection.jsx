@@ -195,14 +195,14 @@ export default function HeroSection({ language = 'en', setLanguage }) {
                   rel="noreferrer"
                   className="transition-opacity hover:opacity-65"
                 >
-                  <FaGithub className="h-5 w-5" />
+                  <FaGithub className="h-7 w-7" />
                 </a>
                 <a
                   href="#contact"
                   aria-label="Email"
                   className="transition-opacity hover:opacity-65"
                 >
-                  <HiOutlineMail className="h-5 w-5" />
+                  <HiOutlineMail className="h-7 w-7" />
                 </a>
               </div>
             </div>
@@ -214,45 +214,47 @@ export default function HeroSection({ language = 'en', setLanguage }) {
             <img
               src={portrait2}
               alt="Sagar portrait"
-              className="block h-[34rem] max-w-full object-contain grayscale sm:h-[40rem] lg:h-[calc(88vh-1rem)] lg:max-h-[860px] lg:-translate-x-9"
+              className="block h-[38rem] max-w-full object-contain grayscale sm:h-[44rem] lg:h-[calc(94vh-1rem)] lg:max-h-[900px] lg:-translate-x-9"
             />
           </div>
 
-          <article
-            className="absolute bottom-[8.5rem] right-0 z-20 w-[min(19rem,92%)] px-4 py-3 sm:bottom-[11.5rem] lg:bottom-[32%] lg:px-[1.15rem] lg:py-[0.65rem]"
-            style={{ backgroundColor: 'var(--card-bg)' }}
-          >
-            <p
-              className="mb-1 text-[0.85rem] font-medium leading-none md:text-[0.93rem]"
-              style={{ color: 'var(--accent)' }}
+          <div className="absolute right-0 bottom-0 z-20 flex w-[min(19rem,92%)] flex-col gap-4 sm:bottom-[3rem] lg:bottom-[16%]">
+            <article
+              className="w-full px-4 py-3 lg:px-[1.15rem] lg:py-[0.65rem]"
+              style={{ backgroundColor: 'var(--card-bg)' }}
             >
-              EXPERIENCE
-            </p>
-            <h3 className="mb-1 text-[2.35rem] leading-none font-bold text-black md:text-[2.65rem]">
-              5+
-            </h3>
-            <p className="text-[0.95rem] leading-[1.2] text-black">
-              Years professional work
-            </p>
-          </article>
+              <p
+                className="mb-1 text-[0.85rem] font-medium leading-none md:text-[0.93rem]"
+                style={{ color: 'var(--accent)' }}
+              >
+                EXPERIENCE
+              </p>
+              <h3 className="mb-1 text-[2.35rem] leading-none font-bold text-black md:text-[2.65rem]">
+                5+
+              </h3>
+              <p className="text-[0.95rem] leading-[1.2] text-black">
+                Years professional work
+              </p>
+            </article>
 
-          <article
-            className="absolute bottom-0 right-0 z-20 w-[min(19rem,92%)] px-4 py-3 sm:bottom-[3rem] lg:bottom-[16%] lg:px-[1.15rem] lg:py-[0.65rem]"
-            style={{ backgroundColor: 'var(--card-bg)' }}
-          >
-            <p
-              className="mb-1 text-[0.85rem] font-medium leading-none md:text-[0.93rem]"
-              style={{ color: 'var(--accent)' }}
+            <article
+              className="w-full px-4 py-3 lg:px-[1.15rem] lg:py-[0.65rem]"
+              style={{ backgroundColor: 'var(--card-bg)' }}
             >
-              SPECIALIZATIONS
-            </p>
-            <h3 className="mb-1 text-[1.7rem] leading-none font-bold text-black md:text-[2rem]">
-              Web &amp; E-com
-            </h3>
-            <p className="text-[0.95rem] leading-[1.2] text-black">
-              WordPress &nbsp;&bull;&nbsp; Shopify &nbsp;&bull;&nbsp; React &nbsp;&bull;&nbsp; Node.js
-            </p>
-          </article>
+              <p
+                className="mb-1 text-[0.85rem] font-medium leading-none md:text-[0.93rem]"
+                style={{ color: 'var(--accent)' }}
+              >
+                SPECIALIZATIONS
+              </p>
+              <h3 className="mb-1 text-[1.7rem] leading-none font-bold text-black md:text-[2rem]">
+                Web &amp; E-com
+              </h3>
+              <p className="text-[0.95rem] leading-[1.2] text-black">
+                WordPress &nbsp;&bull;&nbsp; Shopify &nbsp;&bull;&nbsp; React &nbsp;&bull;&nbsp; Node.js
+              </p>
+            </article>
+          </div>
         </div>
       </div>
     </section>

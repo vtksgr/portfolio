@@ -8,7 +8,7 @@ export const projects = [
   },
   {
     id: 2,
-    tech: ["Shopify", "Photoshop", "Illustrator"],
+    tech: ["Shopify", "Photoshop", "Illustrator", "SEO"],
     links: ["comworks.jp"],
   },
   {
@@ -28,7 +28,7 @@ export const projects = [
   },
   {
     id: 6,
-    tech: ["React", "Tailwind CSS", "Figma", "Node.js"],
+    tech: ["React", "Tailwind CSS", "Figma", "Node.js", "PostgreSQL", "SEO"],
     links: ["horizongroup.co.jp"],
   },
   {
