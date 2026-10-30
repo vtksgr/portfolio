@@ -9,7 +9,7 @@ export const translations = {
       languageSelector: 'EN',
     },
     hero: {
-      intro: 'Full-Stack Web Developer and Designer based in Japan.',
+      intro: 'Web Engineer & Designer based in Japan.',
       heading: 'Crafting Digital Experiences',
       audiences: ['FOR STARTUPS', 'FOR BUSINESSES', 'FOR BRANDS'],
       description: 'I design and develop modern websites, scalable web applications, and high-performing e-commerce platforms.',
@@ -18,9 +18,10 @@ export const translations = {
     },
     about: {
       title: 'About',
-      bio1: 'am a web developer and UI designer based in Saitama, Japan, with hands-on experience building everything from corporate websites to Shopify e-commerce stores of clean design and practical engineering.',
-      bio2: 'At Comworks Co., Ltd., I develop and maintain WordPress websites, build out Shopify stores, design responsive UI layouts, and create marketing graphics. Outside of work, I continuously push my skills forward by building with React, Vue, and Node.js.',
-      bio3: 'I care deeply about details, spacing, typography, and interaction, because great design should feel intuitive before it is even noticed.',
+      bio1: "I'm a web engineer based in Saitama, Japan, with experience in web development, UI design, and digital marketing. I build and maintain corporate websites, develop Shopify stores, and create landing pages and digital experiences that balance clean design with practical functionality.",
+      bio2: 'At Comworks Co., Ltd., my work spans web development and digital marketing: maintaining WordPress websites, developing frontend interfaces, designing marketing materials, monitoring website performance, and managing Google Ads campaigns.',
+      bio3: 'Outside of my professional work, I continue to develop my engineering skills through personal projects using modern technologies such as React, Next.js, TypeScript, and Node.js.',
+      bio4: 'I believe great digital experiences come from thoughtful design, attention to detail, and technology that solves real problems.',
       readMore: 'Read My Story',
       stats: {
         experience: 'YEARS OF EXPERIENCE',
@@ -55,8 +56,8 @@ export const translations = {
           period: 'Apr 2021 - Present',
           place: 'Comworks Co., Ltd.',
           location: 'Japan',
-          title: 'Web Developer',
-          description: 'Designing and developing WordPress websites and Shopify e-commerce stores. Creating responsive HTML/CSS/JS layouts, planning page structure and UI/UX, improving existing websites, and producing banners, flyers, posters, and web graphics for marketing campaigns.',
+          title: 'Web Engineer',
+          description: 'I maintain and improve WordPress websites; design and develop web pages, blog pages, and landing pages; and create visual assets such as graphics, posters, and other marketing materials. I also work on UI design and frontend development, monitor website performance, and manage Google Ads campaigns to support the company’s digital marketing goals.',
         },
         {
           period: '2018 - 2021',
@@ -157,9 +158,10 @@ export const translations = {
     },
     about: {
       title: '私について',
-      bio1: '埼玉県在住のウェブ開発者・UIデザイナーです。企業のコーポレートサイトからShopifyのeコマースストアまで、設計力と実装力を兼ね備えた制作経験があります。',
-      bio2: 'Comworks Co., Ltd.ではWordPressウェブサイトの開発・保守、Shopifyストアの構築、レスポンシブUIレイアウトの設計、マーケティング用のグラフィック制作を行っています。仕事の傍ら、React、Vue、Node.jsなど新しい技術を継続的に学んでいます。',
-      bio3: '細部へのこだわり、スペーシング、タイポグラフィ、インタラクションを大切にしています。優れたデザインは気づかれる前に直感的に感じられるべきだと考えています。',
+      bio1: '埼玉県を拠点とするウェブエンジニアです。ウェブ開発、UIデザイン、デジタルマーケティングの経験があり、企業サイトの構築・保守、Shopifyストアの開発、デザイン性と実用性を兼ね備えたランディングページやデジタル体験の制作に取り組んでいます。',
+      bio2: 'Comworks Co., Ltd.では、WordPressサイトの保守、フロントエンドの開発、マーケティング素材のデザイン、サイトのパフォーマンス監視、Google広告キャンペーンの運用など、ウェブ開発からデジタルマーケティングまで幅広く担当しています。',
+      bio3: '業務外では、個人プロジェクトを通じてエンジニアリングのスキルを磨き、React、Next.js、TypeScript、Node.jsなどのモダンな技術に取り組んでいます。',
+      bio4: '優れたデジタル体験は、細部まで配慮したデザインと、現実の課題を解決するテクノロジーから生まれると考えています。',
       readMore: '私のストーリーを読む',
       stats: {
         experience: '年の経験',
@@ -194,8 +196,8 @@ export const translations = {
           period: '2021年4月 - 現在',
           place: 'Comworks Co., Ltd.',
           location: '日本',
-          title: 'ウェブ開発者',
-          description: 'WordPressウェブサイトとShopifyのeコマースストアの設計・開発を担当。レスポンシブなHTML/CSS/JSレイアウト制作、ページ構成とUI/UXの企画、既存ウェブサイトの改善、マーケティング用バナーやチラシ、ポスター、ウェブグラフィックの制作を行っています。',
+          title: 'ウェブエンジニア',
+          description: 'WordPressサイトの保守・改善、ウェブページ・ブログページ・ランディングページのデザインと開発、グラフィックやポスターなどのマーケティング素材の制作を行っています。また、UIデザインやフロントエンド開発に加え、サイトのパフォーマンス監視やGoogle広告キャンペーンの運用を通じて、会社のデジタルマーケティングを支援しています。',
         },
         {
           period: '2018年 - 2021年',
@@ -216,7 +218,7 @@ export const translations = {
           description: 'Comworksの4つのコーポレートサイトの保守・改善を担当。企画、UI設計、フロントエンド開発に携わり、レスポンシブな動作を保証しています。',
         },
         {
-          title: 'Shopifyeコマースストア',
+          title: 'Shopify eコマースストア',
           subtitle: 'Comworks オンラインストア',
           type: '就業先',
           description: 'Shopifyストアの構築・カスタマイズを担当。商品ページ、在庫管理、UI改善、ウェブデザインを実装。4人の開発チームの一員として取り組みました。',
@@ -228,7 +230,7 @@ export const translations = {
           description: 'ネットワークカメラからの画像キャプチャ・管理用ウェブアプリケーションのUI/UXデザインとレスポンシブフロントエンド開発を担当しました。',
         },
         {
-          title: 'Shopifyeコマースストア',
+          title: 'Shopify eコマースストア',
           subtitle: 'ポカラトレーディング オンラインストア',
           type: 'フリーランス',
           description: 'Shopifyストアの設計・開発を一から担当。商品管理、UI改善、レスポンシブデザイン、プロモーション用バナーグラフィックスを実装しました。',

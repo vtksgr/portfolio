@@ -46,6 +46,10 @@ export default function AboutSection({ language = 'en' }) {
               {t.about.bio3}
             </p>
 
+            <p className="max-w-[760px] text-[1rem] leading-[1.85] text-[var(--text)] md:text-[1.15rem]">
+              {t.about.bio4}
+            </p>
+
             <a
               href={aboutHref}
               className="inline-flex items-center gap-2 border-b border-[#2563EB]/30 pb-1 text-[0.95rem] font-medium text-[#2563EB] transition-colors hover:text-[#1d4ed8] hover:border-[#1d4ed8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#2563EB]"
