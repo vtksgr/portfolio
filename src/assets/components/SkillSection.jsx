@@ -4,7 +4,7 @@ function SkillCard({ title, items }) {
   return (
     <article
       data-cursor-hover
-      className="bg-[#f3f3f3] px-4 py-7 transition-colors duration-200 hover:bg-[#efefef] md:px-6 md:py-8"
+      className="bg-white px-4 py-7 transition-colors duration-200 hover:bg-[#f7f5f2] md:px-6 md:py-8"
     >
       <p
         className="font-mono text-[0.68rem] uppercase tracking-[0.18em] md:text-[0.72rem] font-bold"
@@ -71,10 +71,10 @@ export default function SkillSection({ language = 'en' }) {
   return (
     <section
       id="skills"
-      className="border-y border-[rgba(255,59,52,0.55)] bg-[#f3f3f3] px-5 py-14 sm:px-8 md:px-[4.2rem] md:py-18"
+      className="border-y border-[rgba(255,59,52,0.55)] bg-[var(--page-bg)] px-5 py-14 sm:px-8 md:px-[4.2rem] md:py-18"
     >
       <div className="mx-auto max-w-[1440px]">
-        <div className="flex items-end gap-4 md:gap-6">
+        <div className="flex items-baseline gap-4 md:gap-6">
           <span
             className="text-[1.1rem] font-bold leading-none md:text-[1rem]"
             style={{ color: 'var(--accent)' }}

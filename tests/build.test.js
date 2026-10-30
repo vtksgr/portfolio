@@ -8,7 +8,7 @@ const distDirectory = path.resolve('dist')
 test('production HTML contains portfolio metadata and base-prefixed assets', async () => {
   const html = await readFile(path.join(distDirectory, 'index.html'), 'utf8')
 
-  assert.match(html, /<title>Sagar Pariyar \| Web Developer &amp; UI Designer<\/title>/)
+  assert.match(html, /<title>Sagar Pariyar \| Web Engineer<\/title>/)
   assert.match(html, /name="description"/)
   assert.match(html, /(?:src|href)="\/portfolio\//)
 })

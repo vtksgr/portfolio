@@ -29,7 +29,7 @@ export default function ProjectSection({ language = 'en' }) {
           return (
             <div
               key={projectData[index].id}
-              className="border border-gray-300 p-6 hover:shadow-lg transition"
+              className="border border-gray-300 bg-white p-6 hover:shadow-lg transition"
             >
               <div className="flex justify-between text-sm text-gray-500 mb-3">
                 <span>{String(index + 1).padStart(3, '0')}</span>

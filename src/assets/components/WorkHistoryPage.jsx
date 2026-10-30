@@ -185,7 +185,7 @@ export default function WorkHistoryPage() {
       <CustomCursor />
 
       <div
-        className={`bg-[var(--left-bg)] px-5 py-8 text-[1rem] text-[#333333] sm:px-8 md:py-12 md:text-[1.0625rem] lg:px-12 ${
+        className={`bg-[var(--page-bg)] px-5 py-8 text-[1rem] text-[#333333] sm:px-8 md:py-12 md:text-[1.0625rem] lg:px-12 ${
           lang === 'ja' ? 'leading-[1.95]' : 'leading-[1.75]'
         }`}
       >

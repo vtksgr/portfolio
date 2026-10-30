@@ -39,7 +39,7 @@ export default function Experience({ language = 'en' }) {
       className="border-y border-[rgba(255,59,52,0.45)] bg-[var(--right-bg)] px-5 py-14 sm:px-8 md:px-[4.2rem] md:py-18"
     >
       <div className="mx-auto max-w-[1440px]">
-        <div className="flex items-end gap-4 md:gap-6">
+        <div className="flex items-baseline gap-4 md:gap-6">
           <span
             className="text-[1.1rem] font-bold leading-none md:text-[1rem]"
             style={{ color: 'var(--accent)' }}

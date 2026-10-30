@@ -134,7 +134,7 @@ export const translations = {
       languagesList: ['English', '日本語', 'नेपाली'],
     },
     footer: {
-      text: 'Web Developer & UI Designer',
+      text: 'Web Engineer',
       copyright: '© {year} · Saitama, Japan',
     },
   },
@@ -149,7 +149,7 @@ export const translations = {
       languageSelector: '日本語',
     },
     hero: {
-      intro: '日本在住のフルスタックウェブ開発者・デザイナー',
+      intro: '日本在住のウェブエンジニア・デザイナー',
       heading: 'デジタル体験を\n創り出す',
       audiences: ['スタートアップ向け', 'ビジネス向け', 'ブランド向け'],
       description: '現代的なウェブサイト、スケーラブルなウェブアプリケーション、高性能なeコマースプラットフォームの設計・開発を行います。',
@@ -274,7 +274,7 @@ export const translations = {
       languagesList: ['English', '日本語', 'नेपाली'],
     },
     footer: {
-      text: 'ウェブ開発者・UIデザイナー',
+      text: 'ウェブエンジニア',
       copyright: '© {year} · 埼玉県、日本',
     },
   },

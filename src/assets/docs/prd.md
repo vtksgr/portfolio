@@ -341,9 +341,11 @@ The design system is tailored around a minimal high-contrast identity.
 - Accent: #ff3b34
 - Text: #222222
 - Muted: #777777
+- Page background: #FFFEFD (excluding the hero)
 - Left background: #ffffff
-- Right background: #f1f1f1
-- Card background: rgba(246, 246, 246, 0.93)
+- Right background: #FFFEFD
+- Content card background: #ffffff
+- Hero card background: rgba(246, 246, 246, 0.93)
 
 ### Typography
 - Font family: Jost

@@ -10,7 +10,7 @@ export default function AboutSection({ language = 'en' }) {
   return (
     <section id="about-me" className="px-5 sm:px-8 md:px-[4.2rem] my-32">
       <div className="mx-auto max-w-[1440px]">
-        <div className="flex items-end gap-4 md:gap-6">
+        <div className="flex items-baseline gap-4 md:gap-6">
           <span
             className="text-[1.1rem] font-bold leading-none md:text-[1rem]"
             style={{ color: 'var(--accent)' }}
@@ -62,7 +62,7 @@ export default function AboutSection({ language = 'en' }) {
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5">
             <article
               data-cursor-hover
-              className="min-h-[150px] border bg-[#f7f7f7] px-6 py-8 md:min-h-[162px] md:px-7 md:py-9"
+              className="min-h-[150px] border bg-white px-6 py-8 md:min-h-[162px] md:px-7 md:py-9"
               style={{ borderColor: 'var(--accent)' }}
             >
               <h3 className="text-[2.4rem] leading-none font-semibold text-[var(--text)] md:text-[3rem]">
@@ -78,7 +78,7 @@ export default function AboutSection({ language = 'en' }) {
 
             <article
               data-cursor-hover
-              className="min-h-[150px] border bg-[#f7f7f7] px-6 py-8 md:min-h-[162px] md:px-7 md:py-9"
+              className="min-h-[150px] border bg-white px-6 py-8 md:min-h-[162px] md:px-7 md:py-9"
               style={{ borderColor: 'var(--accent)' }}
             >
               <h3 className="text-[2.4rem] leading-none font-semibold text-[var(--text)] md:text-[3rem]">
@@ -94,7 +94,7 @@ export default function AboutSection({ language = 'en' }) {
 
             <article
               data-cursor-hover
-              className="min-h-[150px] border bg-[#f7f7f7] px-6 py-8 md:min-h-[162px] md:px-7 md:py-9"
+              className="min-h-[150px] border bg-white px-6 py-8 md:min-h-[162px] md:px-7 md:py-9"
               style={{ borderColor: 'var(--accent)' }}
             >
               <h3 className="text-[2.4rem] leading-none font-semibold text-[var(--text)] md:text-[3rem]">
@@ -110,7 +110,7 @@ export default function AboutSection({ language = 'en' }) {
 
             <article
               data-cursor-hover
-              className="min-h-[150px] border bg-[#f7f7f7] px-6 py-8 md:min-h-[162px] md:px-7 md:py-9"
+              className="min-h-[150px] border bg-white px-6 py-8 md:min-h-[162px] md:px-7 md:py-9"
               style={{ borderColor: 'var(--accent)' }}
             >
               <h3 className="text-[2.4rem] leading-none font-semibold text-[var(--text)] md:text-[3rem]">

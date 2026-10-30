@@ -5,8 +5,9 @@
   --accent: #ff3b34;
   --text: #222222;
   --muted: #777777;
+  --page-bg: #FFFEFD;
   --left-bg: #ffffff;
-  --right-bg: #f1f1f1;
+  --right-bg: var(--page-bg);
   --card-bg: rgba(246, 246, 246, 0.93);
   font-family: "Jost", ui-sans-serif, system-ui, sans-serif;
   line-height: 1.5;
@@ -36,7 +37,7 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--text);
-  background:#F8F8F8;
+  background: var(--page-bg);
 }
 
 img,
